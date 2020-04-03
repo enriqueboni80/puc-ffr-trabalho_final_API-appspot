@@ -8,7 +8,7 @@ const SelectField = (props) => {
                     <option selected>Choose...</option>
                     {props.array.map((objeto) => {
                         return (
-                            <option value={objeto.codigo}>{objeto.nome}</option>
+                            <option value={objeto.id}>{objeto.name}</option>
                         )
                     })}
                 </select>

@@ -23,7 +23,7 @@ const Index = () => {
 
   const requestModelos = async (idMarca) => {
     const result = await CarsServices.getModelos(idMarca)
-    setModelos(result.data.modelos)
+    setModelos(result.data)
   }
 
   const requestAnos = async (idModelo) => {

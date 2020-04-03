@@ -14,8 +14,8 @@ const ModelosPresentation = (props) => {
 
     return (
         <>
-            {/* {!loading ? <Spinner />
-                : */}
+            {!loading ? <Spinner />
+                :
                 <div class="row text-center" style={{ marginTop: "25px" }}>
                     <div class="row slug-header">
                         <div class="col-lg-2 col-sm-4 logo"><img src={marca.path_img} /></div>
@@ -41,7 +41,7 @@ const ModelosPresentation = (props) => {
                         </tbody>
                     </table>
                 </div>
-            {/* } */}
+            }
         </>
 
     )

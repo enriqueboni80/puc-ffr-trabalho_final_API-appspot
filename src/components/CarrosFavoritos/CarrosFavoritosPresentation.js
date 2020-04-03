@@ -3,6 +3,7 @@ import { FaRegTrashAlt } from 'react-icons/fa'
 
 const CarrosFavoritosPresentation = (props) => {
     var carrosFavoritos = props.carrosFavoritos
+    console.log(carrosFavoritos)
     return (
         <>
             {carrosFavoritos.length > 0 ?
@@ -22,11 +23,11 @@ const CarrosFavoritosPresentation = (props) => {
                                     <tr>
                                         <td>{key + 1}</td>
                                         <td>
-                                            <b>{carro.Marca},</b> {carro.Modelo} {carro.AnoModelo} {carro.Combustivel}
+                                            <b>{carro.marca},</b> {carro.name} {carro.ano_modelo} {carro.combustivel}
                                         </td>
                                         <td>
-                                            <b>{carro.Valor}</b>
-                                            <p style={{ fontSize: "13px" }}>em {carro.MesReferencia}</p>
+                                            <b>{carro.preco}</b>
+                                            <p style={{ fontSize: "13px" }}>em {carro.referencia}</p>
                                         </td>
                                         <td><div style={{cursor: "pointer"}} onClick={(e) => props.fnDesFavoritar(e, carro)}><FaRegTrashAlt size={20} /></div></td>
                                     </tr>
