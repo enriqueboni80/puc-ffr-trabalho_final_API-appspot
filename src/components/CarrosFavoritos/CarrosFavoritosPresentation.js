@@ -3,7 +3,6 @@ import { FaRegTrashAlt } from 'react-icons/fa'
 
 const CarrosFavoritosPresentation = (props) => {
     var carrosFavoritos = props.carrosFavoritos
-    console.log(carrosFavoritos)
     return (
         <>
             {carrosFavoritos.length > 0 ?
