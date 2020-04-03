@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import CarrosFavoritosPresentation from "./CarrosFavoritosPresentation"
 import { useDispatch, useSelector } from 'react-redux'
 
 
 const Index = () => {
     const carrosFavoritos = useSelector(state => state.carrosFavoritos)
-    const [loading, setLoading] = useState(false)
 
     const dispatch = useDispatch();
     const desFavoritarCarro = (e, carro) => {
@@ -19,7 +18,6 @@ const Index = () => {
     return (
         <CarrosFavoritosPresentation
             carrosFavoritos={carrosFavoritos}
-            loading={loading}
             fnDesFavoritar={desFavoritarCarro}
         />
     )

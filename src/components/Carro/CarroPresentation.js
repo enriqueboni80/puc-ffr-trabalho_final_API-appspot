@@ -6,13 +6,11 @@ const CarroPresentation = (props) => {
     var carro = props.carro
     var marca = props.marca
 
-    console.log(carro)
-
     return (
         <>
             <div class="row text-center" style={{ marginTop: "25px" }}>
                 <div class="row slug-header">
-                    <div class="col-lg-2 col-md-4 col-sm-4 logo"><img src={marca.path_img} /></div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 logo"><img src={marca.path_img} alt="imagem da marca"/></div>
                     <div class="col-lg-5 col-md-4 com-sm-4 title">{marca.nome}</div>
                     <div class="col-lg-4 col-md-4 com-sm-4 content">
                         {

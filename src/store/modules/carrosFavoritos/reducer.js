@@ -13,12 +13,15 @@ const carrosFavoritos = (state = [], action) => {
                 console.log(state)
                 return [...state, action.carro]
             }
+            break
         case 'DEL_CARROS_FAVORITOS':
             return state.filter((carro) => !(carro.name === action.carro.name
                 && carro.ano_modelo === action.carro.ano_modelo
                 && carro.combustivel === action.carro.combustivel))
+                break
         default:
             return state
+            break
     }
 }
 

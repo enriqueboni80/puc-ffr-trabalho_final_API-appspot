@@ -13,7 +13,7 @@ const AnosModelosPresentation = (props) => {
         <>
             <div class="row text-center" style={{ marginTop: "25px" }}>
                 <div class="row slug-header">
-                    <div class="col-lg-2 col-md-4 col-sm-4 logo"><img src={marca.path_img} /></div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 logo"><img src={marca.path_img} alt="imagem da marca"/></div>
                     <div class="col-lg-6 col-md-4 com-sm-4 title">{marca.name}</div>
                     <div class="col-lg-4 col-md-4 com-sm-4 content">{modelo.name}</div>
                 </div>

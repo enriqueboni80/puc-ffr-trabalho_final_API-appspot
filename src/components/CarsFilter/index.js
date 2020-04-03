@@ -12,7 +12,6 @@ const Index = () => {
   const [idModelo, setIdModelo] = useState()
   const [anos, setAnos] = useState([{}])
   const [idAno, setIdAno] = useState()
-  const [carro, setCarro] = useState({})
   const [loading, setLoading] = useState(false)
 
   const requestMarcas = async () => {
@@ -31,16 +30,10 @@ const Index = () => {
     setAnos(result.data)
   }
 
-  const requestCarro = async () => {
-    const result = await CarsServices.getCarro(idMarca, idModelo, idAno)
-    setCarro(result.data)
-  }
-
   useEffect(() => {
     requestMarcas();
     requestModelos();
     requestAnos();
-    requestCarro();
   }, [])
 
   const getModelosDaMarca = (idMarca) => {
@@ -60,12 +53,6 @@ const Index = () => {
     setIdAno(idAno)
   }
 
-  const getCarro = (e) => {
-    e.preventDefault()
-    requestCarro()
-  }
-
-
   return (
     <>
       {!loading ? <Spinner />
@@ -76,12 +63,10 @@ const Index = () => {
             <SelectField funcao={(e) => getModelosDaMarca(e.target.value)} array={marcas} />
             <SelectField funcao={(e) => getAnosDosModelos(e.target.value)} array={modelos} />
             <SelectField funcao={(e) => getAno(e.target.value)} array={anos} />
-            {/* <button class="btn btn-primary col-md-12" onClick={(e) => getCarro(e)}>Procurar</button> */}
             <Link to={`/marcas/${idMarca}/modelos/${idModelo}/anos/${idAno}`} class="btn btn-primary col-md-12" >Procurar</Link>
           </form>
         </div>
       }
-      {/* <CarroPresentation carro={carro} /> */}
     </>
   )
 };
