@@ -5,7 +5,7 @@ class CarsService {
   //Manual da API - https://deividfortuna.github.io/fipe/
 
   static _withBaseUrl(path = "/marcas") {
-    return `http://fipeapi.appspot.com/api/1/carros/${path}.json`;
+    return `https://fipeapi.appspot.com/api/1/carros/${path}.json`;
   }
 
   static getMarcas() {
