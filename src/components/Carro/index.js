@@ -35,9 +35,9 @@ const Index = (props) => {
         var exist = false
         {
             carrosFavoritos.map((carroFavorito) => {
-                if (carro.Modelo === carroFavorito.Modelo
-                    && carro.AnoModelo === carroFavorito.AnoModelo
-                    && carro.Combustivel === carroFavorito.Combustivel) {
+                if (carro.name === carroFavorito.name
+                    && carro.ano_modelo === carroFavorito.ano_modelo
+                    && carro.combustivel === carroFavorito.combustivel) {
                     exist = true
                 }
             })

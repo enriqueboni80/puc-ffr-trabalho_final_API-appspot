@@ -12,4 +12,4 @@ Enrique Bonifácio, João Henrique e Sergisley Matias
 
 (ノಠ益ಠ)ノ彡
 
-###### API Utilizada: https://deividfortuna.github.io/fipe/
+###### API Utilizada: http://fipeapi.appspot.com/
