@@ -9,9 +9,7 @@ const Index = () => {
                     - consumindo <a class="text-white" target="_blank" rel="noopener noreferrer" href="http://fipeapi.appspot.com/"> <u>API FIPE</u></a>
                 </p>
                 <p>Producted by
-                    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/enrique-bonifacio/"> <u>Enrique</u></a>,
-                    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jo%C3%A3o-henrique-delucca-barros-59a0891a4/"> <u>João Henrique</u></a> e
-                    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/sergisleymatias/"> <u>Sergisley</u></a>
+                    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/enrique-bonifacio/"> <u>Enrique</u></a>
                 </p>
                 <p class="m-0 text-center text-white">Copyright &copy; PucMinas 2020</p>
             </div>
